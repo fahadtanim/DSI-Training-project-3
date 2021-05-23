@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Resume of Md. Fahad-Uz-Zaman Khan
+    </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body class="break-words bg-gray-100">
+    <div class="max-w-screen-xl mx-auto flex flex-row flex-wrap pt-10 pb-10 pl-6 pr-4 bg-white">
+        <section class="flex flex-wrap justify-around">
+
+            <div class="lg:w-8/12 md:w-6/12 sm:w-full order-2 md:order-1 lg:order-1 flex justify-center">
+                <div class="self-center">
+                    <h4 class="text-center font-bold"> Md. Fahad-Uz-Zaman Khan</h4>
+                    <div class="text-center">
+                        <b>Address: </b>
+                        1590, South Manda, Mugda, Dhaka-1214
+                    </div>
+                    <div class="text-center">
+                        <b>Contact: </b>
+                        <a class="underline text-blue-500" href="tel:+8801998336446">+8801998336446</a>
+                    </div>
+                    <div class="text-center">
+                        <b>Email: </b>
+                        <a class="underline text-blue-500" href="mailto:fahadtanim@gmail.com">fahadtanim@gmail.com</a>
+                        <button class="underline text-blue-500" id="weather-btn">weather</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-4/12 md:w-6/12 sm:w-full order-1 sm:order-1 md:order-2 lg:order-2 flex flex-wrap justify-center">
+                <div class="w-4/12">
+                    <img id="profile-picture" src="./assets/tanim.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+        <div class="h-0.5 w-full md:w-8/12 self-start bg-blue-200"></div>
+
+        <section class="mt-2">
+            <h4 class="font-bold underline" id="objective-header">Objectives:</h4>
+            <p>To seek a position in an organization that gives scope to enhance my knowledge and skills to
+                reach the principle in the software architecture & development field with sheer
+                determination, dedication and hard work</p>
+        </section>
+        <section class="w-full mt-2">
+            <h4 class=" font-bold underline cursor-pointer hover:border-0" id="summary-header">Summary:</h4>
+            <ul id="summary-content"
+                class="transition duration-500 ease-in-out flex flex-row flex-wrap h-0 overflow-hidden">
+
+            </ul>
+        </section>
+        <section class="w-full md:w-6/12 mt-2">
+            <h4 class="font-bold underline" id="technical-skills-header">Technical Skills:</h4>
+            <ul id="technical-skills-content" class="flex flex-row flex-wrap">
+                <li class="w-10/12 md:w-11/12 ml-10 md:ml-10 list-disc">
+                    <b>Programming Languages:</b>
+                    <p class="pl-3">JavaScript, JSX, Papyrus Docdef, Shell(Basic)</p>
+                </li>
+                <li class="w-10/12 md:w-11/12 ml-10 md:ml-10 list-disc">
+                    <b>Other Languages:</b>
+                    <p class="pl-3">HTML, CSS</p>
+                </li>
+                <li class="w-10/12 md:w-11/12 ml-10 md:ml-10 list-disc">
+                    <b>Frameworks / Libraries / Development Env:</b>
+                    <p class="pl-3">ReactJs, ASP.Net Core (Basic)</p>
+                </li>
+            </ul>
+        </section>
+        <section class="w-full md:w-6/12 mt-2">
+            <h4 class="font-bold underline" id="academic-history-header">Educational Information:</h4>
+            <ul class="flex flex-row flex-wrap" id="academic-history-content">
+            </ul>
+        </section>
+        <section class="w-full mt-2">
+            <h4 class=" font-bold underline" id="projects-header">Projects:</h4>
+            <ul class="w-10/12 md:w-11/12 ml-10 md:ml-10 list-disc" id="projects-content">
+
+            </ul>
+        </section>
+    </div>
+    <div class="fixed shadow h-44 w-44 top-0 left-0 bg-gray-100 p-2 hidden" id="weather-content">
+
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
