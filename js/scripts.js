@@ -68,7 +68,11 @@ window.addEventListener("load", function (event) {
     `;
   });
 
-  containerElem.innerHTML = content;
+  let data = "";
+  for (cont of content) {
+    data += cont;
+  }
+  containerElem.innerHTML = data;
 
   /* Educational Info Content */
   containerElem = document.getElementById("academic-history-content");
@@ -85,7 +89,11 @@ window.addEventListener("load", function (event) {
           </li>
         `;
   });
-  containerElem.innerHTML = content;
+  data = "";
+  for (cont of content) {
+    data += cont;
+  }
+  containerElem.innerHTML = data;
 
   containerElem = document.getElementById("projects-content");
 
@@ -96,7 +104,11 @@ window.addEventListener("load", function (event) {
 
     </li>`;
   });
-  containerElem.innerHTML = content;
+  data = "";
+  for (cont of content) {
+    data += cont;
+  }
+  containerElem.innerHTML = data;
   /* Project Content */
 });
 
